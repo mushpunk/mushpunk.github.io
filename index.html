@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Mushpunk - Cibersec</title>
+</head>
+<body>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="../Site/index.html">cd /root</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">cd /posts</a>
+        </li> -->
+    </ul>
+
+    <div class="image">
+        <img src="./images/me.gif" alt="me" class="me-image">
+        <p class="p-title">Conhecer | Aprender | Explorar | Evoluir</p>
+        <p>
+            <a href="#"><i class="fa-brands fa-github links-redes"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter links-redes"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope links-redes"></i></a>
+    </div>
+
+
+    <div class="contents">
+        <div class="content-container">
+            <a href="#" class="link-article">Chamadas de funções em Assembly x86 e convenções de chamadas na linguagem C</a><br>
+            <p class="data">Publicado em: 20/07/2022</p>
+            <p class="preview-text">E aí amigos, tranquilo? Essa semana estive estudando sobre como ocorre as chamadas de função em baixo nível e me deparei com algumas coisas interessantes que eu nunca tinha tido contato anteriormente. Em razão disso resolvi escrever esse pequeno artigo pra ajudar no entendimento e na fixação desses conteúdos...</p>
+            <hr>
+        </div>
+        <div>
+            <a href="#" class="link-article">Walkthrough: Root Me - TryHackMe [PT/BR]</a><br>
+            <p class="data">Publicado em: 20/07/2022</p>
+            <p class="preview-text">E aí? Bão? Bora pra mais um walkthrough de uma máquina do TryHackMe? A máquina de hoje vai ser a “RootMe” de dificuldade Easy. Partiu! Vamos começar fazer um reconhecimento inicial da máquina, vou começar executando o nmap com os comandos:...</p>
+            <hr>
+        </div>
+        <div>
+            <a href="./articles/basic_pentest/basic_pentest.html" class="link-article">Walkthrough: Basic Pentesting - TryHackMe [PT/BR]</a><br>
+            <p class="data">Publicado em: 20/07/2022</p>
+            <p class="preview-text">E aí turma, beleza? Hoje venho compartilhar com vocês o “Walkthrough” da máquina Basic Pentest do TryHackMe. A máquina é free, não é necessário ser assinante, então cola aí e vamos nessa!...</p>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7dc0d5b6d6.js" crossorigin="anonymous"></script>
+    <script>
+        const titulo = document.querySelector(".p-title");
+
+        function typeWrite(elemento) {
+            const txtArray = elemento.innerHTML.split('');
+            elemento.innerHTML = "";
+            txtArray.forEach((letra, i) => {
+                setTimeout(function() {
+                    elemento.innerHTML += letra;
+                }, 75 * i);
+            });
+        }
+
+        typeWrite(titulo);
+    </script>
+</body>
+</html>
